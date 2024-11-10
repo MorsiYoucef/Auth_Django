@@ -19,6 +19,6 @@ def authView(request):
         form = UserCreationForm()
         return render(request, "registration/signup.html", {"form": form})
 
-def authView(request):
-    form = UserCreationForm()
-    return render(request, "registration/signup.html", {"form": form})
+# def authView(request):
+#     form = UserCreationForm()
+#     return render(request, "registration/signup.html", {"form": form})
