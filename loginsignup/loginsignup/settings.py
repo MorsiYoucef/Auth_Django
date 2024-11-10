@@ -118,9 +118,12 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-LOGIN_REDIRECT_URL = '/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+LOGIN_REDIRECT_URL = "base:home"
+LOGOUT_REDIRECT_URL = "base:login"
